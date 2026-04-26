@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Jesús Jiménez</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --accent-color: #00ffcc;
+            --card-bg: #1e1e1e;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .proyecto {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            transition: transform 0.2s;
+        }
+        .proyecto:hover {
+            transform: translateX(10px);
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background-color: #333;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hola, soy Jesús Jiménez 👋</h1>
+        <p>Estudiante de Informática | Desarrollador de Automatizaciones | Entusiasta de Linux</p>
+    </header>
+
+    <div class="container">
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Me apasiona resolver problemas complejos utilizando tecnología. Tengo experiencia configurando entornos de desarrollo, entrenando redes neuronales y creando flujos de automatización para optimizar procesos. Combino mi enfoque técnico con experiencia en el sector marítimo y la gestión comercial para entregar soluciones prácticas y eficientes.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            
+            <div class="proyecto">
+                <h3>🤟 Intérprete de Lengua de Señas en Tiempo Real</h3>
+                <p>Desarrollo de un modelo de red neuronal recurrente (LSTM) utilizando Python y MediaPipe para el reconocimiento dinámico de gestos.</p>
+                <small>Tecnologías: Python, LSTM, MediaPipe, Visión por Computadora.</small>
+            </div>
+
+            <div class="proyecto">
+                <h3>🤖 Chatbot Omnicanal de Atención al Cliente</h3>
+                <p>Bot automatizado desplegado en un servidor local para gestionar consultas comerciales. Integración directa con inteligencia artificial para respuestas contextuales.</p>
+                <small>Tecnologías: WAHA, n8n, Docker, Gemini API.</small>
+            </div>
+
+            <div class="proyecto">
+                <h3>💱 Automatización de Extracción de Datos (BCV)</h3>
+                <p>Script programado para obtener diariamente las tasas de cambio oficiales y actualizar reportes estructurados de manera automática.</p>
+                <small>Tecnologías: Python, Web Scraping, Archivos Batch.</small>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Tecnologías y Herramientas</h2>
+            <ul class="skills">
+                <li>Python</li>
+                <li>Redes Neuronales (LSTM)</li>
+                <li>n8n & Automatización</li>
+                <li>Docker</li>
+                <li>Zorin OS / Linux</li>
+                <li>Git & GitHub</li>
+                <li>Gestión de APIs</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
